@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.logo{
+    font-family: 'Cherry Swash', cursive;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #00D089;
+    width: 100%;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 0;
+}
