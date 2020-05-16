@@ -3,19 +3,118 @@
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
-.container{
+
+.container {
     width: 1140px;
     margin: 0 auto;
 }
-.logo{
+
+header {
+    background-color: #4D98A4;
+}
+
+.logo {
     font-family: 'Cherry Swash', cursive;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav a::after {
+    content: '\002F';
+    padding: 0 20px;
+}
+
+nav a:nth-child(4)::after {
+    content: '';
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #DCE3E4;
+    text-transform: uppercase;
 }
 
 
+.banner {
+    background: url("../img/ocean.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
 
+.banner h2 {
+    font-size: 44px;
+    color: #E4E4E4;
+    padding: 130px 0 45px;
+    width: 517px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.banner .btn {
+    font-family: 'Maven Pro', sans-serif;
+    background: none;
+    border: 2px solid #FFFFFF;
+    color: #E4E4E4;
+    font-size: 30px;
+    padding: 5px 35px 8px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner__dots {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 30px 0;
+}
+
+.dots {
+    width: 9px;
+    height: 9px;
+    background: #FFFFFF;
+    cursor: pointer;
+    border-radius: 16px;
+    margin: 0 4px;
+}
+
+.dots:active {
+    background: #69728C;
+}
+
+
+.learn {
+    text-align: center;
+}
+
+.learn h3 {
+    font-size: 30px;
+    color: #4C505D;
+    padding: 100px 0 40px;
+    width: 590px;
+    margin: 0 auto;
+}
+
+.learn p {
+    color: #4C505D;
+    font-size: 14px;
+    padding-bottom: 70px;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.learn img{
+    padding: 0 35px 80px 35px;
+}
 footer {
     display: flex;
     justify-content: center;
