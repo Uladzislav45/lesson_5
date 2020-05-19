@@ -14,9 +14,12 @@ body {
 
 header {
     background-color: #4D98A4;
+    width: 100%;
+    position: fixed;
 }
 
-.logo {
+.logo a {
+    text-decoration: none;
     font-family: 'Cherry Swash', cursive;
     color: #FFFFFF;
     font-size: 40px;
@@ -25,27 +28,26 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 0;
 }
 
-nav a::after {
+nav .links::after {
     content: '\002F';
     padding: 0 20px;
 }
 
-nav a:nth-child(4)::after {
+nav .links:nth-child(4)::after {
     content: '';
 }
 
-nav a {
+nav .links {
     text-decoration: none;
     font-size: 18px;
     color: #DCE3E4;
     text-transform: uppercase;
 }
-
 
 .banner {
     background: url("../img/ocean.png") center center no-repeat;
@@ -129,31 +131,19 @@ nav a {
 .face {
     display: flex;
     justify-content: center;
-    position: relative;
     padding: 70px 0 0 0;
 }
 
-.face img{
-    padding: 0 0 0 130px;
+
+.face__title {
+    margin-left: 30px;
 }
 
-.face::after {
-    content: '\201F';
-    font-size: 250px;
-    position: absolute;
-    bottom: 142px;
-    right: 385px;
-    top: 35px;
-    color: #ffffff;
-    opacity: 0.2;
-}
-
-.face span {
+.face h3 {
     font-size: 26px;
     color: #E4E4E4;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 30px;
 }
 
 .testimonial p {
@@ -161,24 +151,8 @@ nav a {
     margin: 0 auto;
     font-size: 18px;
     color: #FFFFFF;
-    width: 900px;
-    text-align: center;
-    align-self: center;
-}
-
-.testimonial__face-text p {
-    font-size: 26px;
-    color: #E4E4E4;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-.testimonial__face-text p:nth-child(2) {
-    width: 127px;
-    height: 90px;
-    opacity: 0.2;
-    color: #FFFFFF;
-    font-size: 100px;
+    width: 670px;
+    text-align: justify;
 }
 
 .contact {
@@ -248,8 +222,6 @@ textarea::placeholder {
     line-height: 30px;
     color: #FFFFFF;
 }
-
-
 
 footer {
     display: flex;
