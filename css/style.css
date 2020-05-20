@@ -15,7 +15,9 @@ body {
 header {
     background-color: #4D98A4;
     width: 100%;
+    opacity: 0.8;
     position: fixed;
+    top: 0;
 }
 
 .logo a {
@@ -30,7 +32,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 nav .links::after {
@@ -53,6 +55,7 @@ nav .links {
     background: url("../img/ocean.png") center center no-repeat;
     background-size: cover;
     text-align: center;
+    margin-top: 73px;
 }
 
 .banner h2 {
@@ -107,7 +110,7 @@ nav .links {
     font-size: 30px;
     color: #4C505D;
     padding: 80px 0 40px;
-    width: 50%;
+    width: 40%;
     align-self: center;
     font-weight: 500;
 }
@@ -147,12 +150,12 @@ nav .links {
 }
 
 .testimonial p {
-    padding: 60px 0;
+    padding: 60px 0 80px;
     margin: 0 auto;
     font-size: 18px;
     color: #FFFFFF;
-    width: 58%;
-    text-align: justify;
+    width: 80%;
+    word-spacing: 5px;
 }
 
 .contact {
@@ -216,11 +219,13 @@ textarea::placeholder {
     margin-top: 25px;
 }
 
-.contact__btn::before {
-    content: '\2713';
-    font-size: 30px;
-    line-height: 30px;
-    color: #FFFFFF;
+.check {
+    width: 15px;
+    height: 25px;
+    margin: 0px 20px 3px;
+    border: solid #FFFFFF;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg)
 }
 
 footer {
@@ -231,6 +236,7 @@ footer {
 }
 
 footer p {
+    text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
     padding: 15px 0;
